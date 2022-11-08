@@ -167,7 +167,34 @@ body {
 .footer__nav:last-child {
     text-align: end;
 }
-.footer__nav i{
-    font-size:24px ;
+
+.footer__nav i {
+    font-size: 24px;
     color: var(--new--color);
+}
+
+.header__burger {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 3px;
+    background-color: var(--light-color);
+}
+
+.header__burger::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: var(--light-color);
+    top: -9px
+}
+
+.header__burger::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: var(--light-color);
+    bottom: -9px;
 }
